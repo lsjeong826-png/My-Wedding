@@ -1,0 +1,85 @@
+/**
+ * Nature Green Wedding Invitation Configuration
+ *
+ * 이 파일에서 청첩장의 모든 정보를 수정할 수 있습니다.
+ * 이미지는 설정이 필요 없습니다. 아래 폴더에 순번 파일명으로 넣으면 자동 감지됩니다.
+ *
+ * 이미지 폴더 구조 (파일명 규칙):
+ *   images/hero/1.jpg      - 메인 사진 (1장, 필수)
+ *   images/story/1.jpg, 2.jpg, ...  - 스토리 사진들 (순번, 자동 감지)
+ *   images/gallery/1.jpg, 2.jpg, ... - 갤러리 사진들 (순번, 자동 감지)
+ *   images/location/1.jpg  - 약도/지도 이미지 (1장)
+ *   images/og/1.jpg        - 카카오톡 공유 썸네일 (1장)
+ */
+
+const CONFIG = {
+  // ── 초대장 열기 ──
+  useCurtain: true,  // 초대장 열기 화면 사용 여부 (true: 사용, false: 바로 본문 표시)
+
+  // ── 메인 (히어로) ──
+  groom: {
+    name: "한정호",
+    nameEn: "Groom",
+    father: "한현식",
+    mother: "유정옥",
+    fatherDeceased: false,
+    motherDeceased: false
+  },
+
+  bride: {
+    name: "정이슬",
+    nameEn: "Bride",
+    father: "정도용",
+    mother: "최옥희",
+    fatherDeceased: false,
+    motherDeceased: false
+  },
+
+  wedding: {
+    date: "2026-07-26",
+    time: "11:30",
+    venue: "그랜드 모먼트",
+    hall: "베일홀 B2층",
+    address: "부산 남구 대연동 황령대로 401-9",
+    tel: "051-922-2200",
+    mapLinks: {
+      kakao: "https://place.map.kakao.com/1277548361",
+      naver: "https://naver.me/GoD7OvE4"
+    }
+  },
+
+  // ── 인사말 ──
+  greeting: {
+    title: "소중한 분들을 초대합니다",
+    content: "좋은 사람을 만났습니다.\n함께 있으면 마음이 편안해지는 사람입니다.\n\n그 편안함 그대로 평생을 다정하게 살아가려 합니다.\n저희의 소박한 시작을 축하해 주세요."
+  },
+
+  // ── 우리의 이야기 ──
+  story: {
+    title: "우리의 이야기",
+    content: "서로를 향한 처음의 약속을 잊지 않고\n예쁘게 잘 살겠습니다..\n\n저희의 시작에 오셔서 기운찬 응원을 보내주세요!"
+  },
+
+  // ── 오시는 길 ──
+  // (mapLinks와 캘린더는 location 섹션 내에 포함)
+
+  // ── 마음 전하실 곳 ──
+  accounts: {
+    groom: [
+      { role: "한정호", name: "한정호", bank: "국민은행", number: "1111-01-04-199511" }, 
+      { role: "한현식", name: "한현식", bank: "신한은행", number: "110-458-222864" },
+      { role: "유정옥", name: "유정옥", bank: "부산은행", number: "050-12-032117-0" }
+    ],
+    bride: [
+      { role: "정이슬", name: "정이슬", bank: "국민은행", number: "909601-01-573030" }, 
+      { role: "정도용", name: "정도용", bank: "농협은행", number: "351-0764-0312-53" },
+      { role: "최옥희", name: "최옥희", bank: "농협은행", number: "356-0965-7804-63" }
+    ]
+  },
+
+  // ── 링크 공유 시 나타나는 문구 ──
+  meta: {
+    title: "한정호 ♥ 정이슬 결혼합니다",
+    description: "2026년 7월 26일, 소중한 분들을 초대합니다."
+  }
+};
