@@ -38,7 +38,7 @@ const CONFIG = {
   wedding: {
     date: "2026-07-26",
     time: "11:30",
-    venue: "그랜드 모먼트",
+    venue: "그랜드 모먼트 부산",
     hall: "베일홀 B2층",
     address: "부산 남구 대연동 황령대로 401-9",
     tel: "051-922-2200",
